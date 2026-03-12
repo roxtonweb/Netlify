@@ -27,19 +27,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .logo {
   font-weight: 700;
   letter-spacing: 0.03em;
+  font-size: 0.95rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav a {
-  margin-left: 16px;
+  margin-left: 12px;
+  margin-top: 4px;
   text-decoration: none;
   color: #374151;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .nav a:hover {
@@ -47,13 +55,13 @@ body {
 }
 
 .btn-small {
-  padding: 6px 12px;
+  padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid #111827;
 }
 
 .hero {
-  padding: 64px 0 48px;
+  padding: 40px 0 28px;
   background: radial-gradient(circle at top left, #eff6ff, #f9fafb 50%);
 }
 
@@ -63,17 +71,18 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   color: #4b5563;
+  font-size: 0.95rem;
 }
 
 .hero-note {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #6b7280;
 }
 
@@ -81,10 +90,10 @@ body {
   display: inline-block;
   background: #111827;
   color: #ffffff;
-  padding: 10px 18px;
+  padding: 9px 16px;
   border-radius: 999px;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .btn-primary:hover {
@@ -92,7 +101,7 @@ body {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 36px 0;
 }
 
 .section-alt {
@@ -101,30 +110,32 @@ body {
 
 .section h2 {
   margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-size: 1.35rem;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 14px;
 }
 
 .card {
   background: #ffffff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 .card h3 {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  font-size: 1rem;
 }
 
 .card p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .card-package {
@@ -140,9 +151,9 @@ body {
 }
 
 .price {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
 }
 
 .card-package ul {
@@ -152,14 +163,14 @@ body {
 }
 
 .card-package li {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #4b5563;
   margin-bottom: 4px;
 }
 
 .examples-note {
-  margin-top: 16px;
-  font-size: 0.9rem;
+  margin-top: 12px;
+  font-size: 0.85rem;
   color: #6b7280;
 }
 
@@ -167,29 +178,53 @@ body {
   text-align: center;
 }
 
+.contact h2 {
+  font-size: 1.3rem;
+}
+
 .contact-note {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #6b7280;
 }
 
 .site-footer {
   border-top: 1px solid #e5e7eb;
-  padding: 16px 0;
+  padding: 14px 0;
   background: #f9fafb;
 }
 
 .footer-inner {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #6b7280;
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 64px 0 48px;
+  }
+
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 
   .grid-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .header-inner {
+    padding: 12px 0;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
   }
 }
